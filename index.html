@@ -6,15 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="transcript"></div>
-    <script>
-        const SpeechRecognition = window.SpeechRecognition || webkitSpeechRecognition;
-        const recognition = new SpeechRecognition();
-        recognition.start();
-        recognition.onresult = event =>{
-        const lastresult = event.results[event.results.length-1];
-        transcript.innerHTML = lastresult[0];
-        };
-    </script>
+
 </body>
 </html>
